@@ -1,1 +1,1 @@
-# Photo Pages
+# Static Photo Pages
