@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLUE by @thud | DriversHub</title>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="BLUE by @thud" />
+  <meta property="og:description" content="Check out this photo on DriversHub" />
+  <meta property="og:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765151024465-pc3nc8.jpg" />
+  <meta property="og:url" content="https://s.drivershub.com/photos/121f38fe.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="DriversHub" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BLUE by @thud" />
+  <meta name="twitter:description" content="Check out this photo on DriversHub" />
+  <meta name="twitter:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765151024465-pc3nc8.jpg" />
+  
+  <link rel="canonical" href="https://www.drivershub.com/u/thud/photo/121f38fe-becd-41db-a927-50d0097e0865" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    /* Dark mode (default) - matching index.css .dark */
+    :root {
+      --background: hsl(220 20% 8%);
+      --foreground: hsl(0 0% 98%);
+      --card: hsl(220 18% 12%);
+      --card-foreground: hsl(0 0% 98%);
+      --muted: hsl(220 15% 18%);
+      --muted-foreground: hsl(220 10% 60%);
+      --accent: hsl(210 15% 50%);
+      --border: hsl(220 15% 20%);
+      --primary: hsl(37 90% 55%);
+    }
+    
+    /* Light mode - matching index.css :root */
+    .light {
+      --background: hsl(0 0% 100%);
+      --foreground: hsl(220 15% 10%);
+      --card: hsl(0 0% 100%);
+      --card-foreground: hsl(220 15% 10%);
+      --muted: hsl(220 15% 96%);
+      --muted-foreground: hsl(220 10% 46%);
+      --accent: hsl(210 15% 50%);
+      --border: hsl(220 15% 90%);
+    }
+    
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    
+    /* Nav - matching AppNavigation: border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50 */
+    .nav {
+      border-bottom: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: var(--card);
+      z-index: 50;
+    }
+    
+    .logo-link {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+    
+    /* Logo: h-8 md:h-10 w-auto */
+    .logo-img {
+      height: 2rem;
+      width: auto;
+      transition: all 0.3s;
+    }
+    
+    @media (min-width: 768px) {
+      .logo-img { height: 2.5rem; }
+    }
+    
+    body:not(.light) .logo-img {
+      filter: invert(1) hue-rotate(180deg);
+    }
+    
+    /* Button base: inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    
+    /* Button ghost: hover:bg-accent hover:text-accent-foreground */
+    .btn-ghost {
+      background: transparent;
+      border: none;
+      color: var(--foreground);
+      height: 2.5rem;
+      padding: 0.5rem 1rem;
+    }
+    .btn-ghost:hover { background: var(--accent); color: hsl(0 0% 100%); }
+    
+    /* Button outline size="sm": h-9 px-3, border border-input bg-background */
+    .btn-outline {
+      background: var(--background);
+      border: 1px solid var(--border);
+      color: var(--foreground);
+      height: 2.25rem;
+      padding: 0 0.75rem;
+    }
+    .btn-outline:hover { background: var(--accent); color: hsl(0 0% 100%); }
+    
+    /* Container: container mx-auto px-4 py-6 max-w-4xl */
+    .container {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+    
+    /* Header row: flex items-center justify-between mb-6 */
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Card: overflow-hidden with border */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+    
+    /* User header: p-4 border-b flex items-center gap-3 */
+    .user-header {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    /* Avatar: w-10 h-10 */
+    .avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .avatar-fallback { color: var(--muted-foreground); font-size: 1.125rem; }
+    
+    .user-info { flex: 1; }
+    
+    /* Username: font-semibold hover:underline cursor-pointer */
+    .username {
+      font-weight: 600;
+      color: var(--foreground);
+      text-decoration: none;
+    }
+    .username:hover { text-decoration: underline; }
+    
+    /* Date: text-sm text-muted-foreground */
+    .date { font-size: 0.875rem; color: var(--muted-foreground); }
+    
+    /* Photo container: bg-muted/20 relative */
+    .photo-container {
+      background: color-mix(in srgb, var(--muted) 20%, transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    /* Photo: w-full max-h-[70vh] object-contain */
+    .photo-container img {
+      width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+    
+    /* Content footer: p-4 */
+    .content-footer { padding: 1rem; }
+    
+    /* Title: text-xl font-semibold mb-3 */
+    .photo-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; }
+    
+    /* Actions: flex items-center gap-4 mb-4 */
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* Like button: Button variant="ghost" size="sm" -> h-9 px-3 */
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      height: 2.25rem;
+      padding: 0 0.75rem;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      background: transparent;
+      border: none;
+      color: var(--foreground);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .action-btn:hover { background: var(--accent); color: hsl(0 0% 100%); }
+    /* Heart icon: w-5 h-5 mr-1 */
+    .action-btn svg { width: 1.25rem; height: 1.25rem; flex-shrink: 0; margin-right: 0.25rem; }
+    .action-btn span { text-decoration: none; }
+    
+    /* Comment count: span with flex items-center gap-1 text-muted-foreground */
+    .comment-count {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      color: var(--muted-foreground);
+      font-size: 0.875rem;
+    }
+    /* MessageSquare icon: w-5 h-5 */
+    .comment-count svg { width: 1.25rem; height: 1.25rem; }
+    
+    .arrow-icon, .link-icon { width: 1rem; height: 1rem; }
+    
+    /* Footer: bg-muted border-t border-border mt-auto */
+    .footer {
+      background: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: auto;
+    }
+    
+    /* Footer container: max-w-5xl mx-auto px-4 py-8 */
+    .footer-container {
+      max-width: 64rem;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    
+    /* Footer grid: grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (min-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+      }
+    }
+    
+    /* Footer brand: font-bold text-lg text-foreground mb-2 */
+    .footer-brand {
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: var(--foreground);
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Footer tagline: text-sm text-muted-foreground */
+    .footer-tagline {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+    
+    /* Footer heading: font-semibold text-foreground mb-4 */
+    .footer-heading {
+      font-weight: 600;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+    
+    /* App buttons container */
+    .app-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    /* App button: inline-flex items-center gap-1.5 bg-black text-white px-3 py-2.5 rounded-md */
+    .app-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      background: #000;
+      color: #fff;
+      padding: 0.625rem 0.75rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .app-button:hover { opacity: 0.8; }
+    .app-icon { width: 1rem; height: 1rem; }
+    .app-text { display: flex; flex-direction: column; align-items: flex-start; }
+    .app-label { font-size: 0.5rem; line-height: 1; }
+    .app-store { font-size: 0.75rem; font-weight: 600; line-height: 1; }
+    
+    /* Social links: flex items-center gap-3 flex-wrap */
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    
+    /* Social link: text-muted-foreground hover:text-primary */
+    .social-link {
+      color: var(--muted-foreground);
+      transition: color 0.2s;
+    }
+    .social-link:hover { color: var(--primary); }
+    
+    /* Legal links: space-y-2 */
+    .legal-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    /* Legal link: text-sm text-muted-foreground hover:text-foreground */
+    .legal-link {
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .legal-link:hover { color: var(--foreground); }
+    
+    /* Footer copyright: mt-8 pt-6 border-t border-border */
+    .footer-copyright {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted-foreground);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const p = new URLSearchParams(window.location.search);
+    if (p.get('d') !== '1') document.body.classList.add('light');
+    const likes = p.get('l') || '0';
+    const comments = p.get('c') || '0';
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('likes').textContent = likes;
+      document.getElementById('comments').textContent = comments;
+    });
+  </script>
+  <nav class="nav">
+    <a href="https://www.drivershub.com" class="logo-link">
+      <img src="https://www.drivershub.com/assets/drivershub-logo-orange-black-Bb7UgCJd.png" alt="DriversHub" class="logo-img" />
+    </a>
+    <a href="https://www.drivershub.com/u/thud/photo/121f38fe-becd-41db-a927-50d0097e0865" class="btn btn-outline">View on DriversHub</a>
+  </nav>
+
+  <div class="container">
+    <div class="header-row">
+      <a href="https://www.drivershub.com/u/thud" class="btn btn-ghost">
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
+        </svg>
+        Back to Profile
+      </a>
+      <button class="btn btn-outline" onclick="navigator.clipboard.writeText(window.location.href);alert('Link copied!')">
+        <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+        </svg>
+        Copy Link
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="user-header">
+        <div class="avatar">
+          <img src="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/avatars/a93322d1-83c1-4ed6-862c-be6923048830-avatar-1765050974013.jpg" alt="thud" />
+        </div>
+        <div class="user-info">
+          <a href="https://www.drivershub.com/u/thud" class="username">@thud</a>
+          <p class="date">Dec 7, 2025</p>
+        </div>
+      </div>
+
+      <div class="photo-container">
+        <img src="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765151024465-pc3nc8.jpg" alt="BLUE" />
+      </div>
+
+      <div class="content-footer">
+        <h1 class="photo-title">BLUE</h1>
+        
+        <div class="actions">
+          <a href="https://www.drivershub.com/u/thud/photo/121f38fe-becd-41db-a927-50d0097e0865" class="action-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+            <span id="likes">0</span>
+          </a>
+          <span class="comment-count">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span id="comments">0</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div>
+          <h3 class="footer-brand">DriversHub</h3>
+          <p class="footer-tagline">Build your Garage.<br/>Find your next car.</p>
+        </div>
+
+        <!-- Download Our App -->
+        <div>
+          <h4 class="footer-heading">Download Our App</h4>
+          <div class="app-buttons">
+            <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="app-button">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="app-icon">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              <div class="app-text">
+                <span class="app-label">Download on the</span>
+                <span class="app-store">App Store</span>
+              </div>
+            </a>
+            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" class="app-button">
+              <svg viewBox="0 0 24 24" class="app-icon">
+                <path fill="#EA4335" d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92z"/>
+                <path fill="#FBBC04" d="M17.556 8.236L5.741.851C5.043.411 4.292.267 3.609 1.814L13.792 12l3.764-3.764z"/>
+                <path fill="#4285F4" d="M3.609 22.186c.683 1.547 1.434 1.403 2.132.963l11.815-7.385-3.764-3.764L3.61 22.186z"/>
+                <path fill="#34A853" d="M21.001 12c0-.79-.467-1.473-1.148-1.785l-2.297-1.431L13.792 12l3.764 3.764 2.297-1.43c.681-.312 1.148-1.545 1.148-2.334z"/>
+              </svg>
+              <div class="app-text">
+                <span class="app-label">GET IT ON</span>
+                <span class="app-store">Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Follow Us -->
+        <div>
+          <h4 class="footer-heading">Follow Us</h4>
+          <div class="social-links">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="legal-links">
+            <li><a href="https://www.drivershub.com/privacy" class="legal-link">Privacy Policy</a></li>
+            <li><a href="https://www.drivershub.com/terms" class="legal-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <p>© 2025 DriversHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
