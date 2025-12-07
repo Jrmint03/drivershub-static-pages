@@ -1,0 +1,37 @@
+# .github/workflows/sync-static-pages.yml in want-a-ride repo
+name: Sync Static Pages to drivershub-static-pages
+
+on:
+  push:
+    paths:
+      - 'public/photos/**/*.html'  # Only watch static photo pages
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout want-a-ride
+        uses: actions/checkout@v3
+
+      - name: Checkout drivershub-static-pages
+        uses: actions/checkout@v3
+        with:
+          repository: Jrmint03/drivershub-static-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: static-pages-repo
+
+      - name: Copy static photo pages
+        run: |
+          mkdir -p static-pages-repo/photos
+          cp -r public/photos/*.html static-pages-repo/photos/
+
+      - name: Commit and push to drivershub-static-pages
+        run: |
+          cd static-pages-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add photos/
+          git commit -m "Sync static pages from want-a-ride" || echo "No changes to commit"
+          git push
