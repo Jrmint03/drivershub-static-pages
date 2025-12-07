@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://s.drivershub.com/photos/4a8bb638.html">
+  <meta property="og:title" content="BIRDS by @thud - DriversHub">
+  <meta property="og:description" content="Check out this photo on DriversHub">
+  <meta property="og:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765146463561-wn97kl.jpeg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://s.drivershub.com/photos/4a8bb638.html">
+  <meta property="twitter:title" content="BIRDS by @thud - DriversHub">
+  <meta property="twitter:description" content="Check out this photo on DriversHub">
+  <meta property="twitter:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765146463561-wn97kl.jpeg">
+  
+  <title>BIRDS by @thud - DriversHub</title>
+  
+  <!-- Google Fonts - Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --background: hsl(240 10% 3.9%);
+      --foreground: hsl(0 0% 98%);
+      --card: hsl(240 10% 3.9%);
+      --card-foreground: hsl(0 0% 98%);
+      --primary: hsl(37 90% 55%);
+      --primary-foreground: hsl(240 5.9% 10%);
+      --muted: hsl(240 3.7% 15.9%);
+      --muted-foreground: hsl(240 5% 64.9%);
+      --border: hsl(240 3.7% 15.9%);
+      --radius: 0.5rem;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--background);
+      color: var(--foreground);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding: 0 4px;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--foreground);
+    }
+    
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary-foreground);
+    }
+    
+    .logo-text {
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--primary);
+    }
+    
+    .user-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding: 0 4px;
+    }
+    
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--primary-foreground);
+      text-transform: uppercase;
+    }
+    
+    .user-info {
+      flex: 1;
+    }
+    
+    .username {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--foreground);
+    }
+    
+    .username a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .username a:hover {
+      color: var(--primary);
+    }
+    
+    .timestamp {
+      color: var(--muted-foreground);
+      font-size: 13px;
+    }
+    
+    .photo-container {
+      width: 100%;
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    
+    .photo {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .photo-info {
+      padding: 16px;
+    }
+    
+    .photo-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--foreground);
+    }
+    
+    .interactions {
+      display: flex;
+      gap: 8px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    
+    .interaction-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--foreground);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-family: 'Outfit', sans-serif;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      transition: all 0.2s;
+    }
+    
+    .interaction-btn:hover {
+      background: var(--muted);
+      border-color: var(--primary);
+    }
+    
+    .icon {
+      font-size: 16px;
+    }
+    
+    .view-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: var(--primary-foreground);
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 14px;
+      font-family: 'Outfit', sans-serif;
+      transition: all 0.2s;
+      width: 100%;
+    }
+    
+    .view-btn:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+    }
+    
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted-foreground);
+      font-size: 13px;
+    }
+    
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .tagline {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--muted-foreground);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="https://drivershub.com" class="logo">
+        <div class="logo-icon">D</div>
+        <span class="logo-text">DriversHub</span>
+      </a>
+    </div>
+    
+    <div class="user-row">
+      <div class="avatar">T</div>
+      <div class="user-info">
+        <div class="username"><a href="https://drivershub.com/u/thud">@thud</a></div>
+        <div class="timestamp">Shared on DriversHub</div>
+      </div>
+    </div>
+    
+    <div class="photo-container">
+      <img src="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765146463561-wn97kl.jpeg" alt="BIRDS" class="photo">
+      
+      <div class="photo-info">
+        <h1 class="photo-title">BIRDS</h1>
+        
+        <div class="interactions">
+          <button class="interaction-btn" onclick="window.location.href='https://drivershub.com/u/thud/photo/4a8bb638-4a1e-420f-8c31-82263da11d55'">
+            <span class="icon">♥</span>
+            <span>Like</span>
+          </button>
+          <button class="interaction-btn" onclick="window.location.href='https://drivershub.com/u/thud/photo/4a8bb638-4a1e-420f-8c31-82263da11d55'">
+            <span class="icon">💬</span>
+            <span>Comment</span>
+          </button>
+          <button class="interaction-btn" onclick="if(navigator.share){navigator.share({title: 'BIRDS', url: window.location.href}).catch(()=>{})}else{navigator.clipboard.writeText(window.location.href)}">
+            <span class="icon">↗</span>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <a href="https://drivershub.com/u/thud/photo/4a8bb638-4a1e-420f-8c31-82263da11d55" class="view-btn">
+      View on DriversHub →
+    </a>
+    
+    <div class="footer">
+      <a href="https://drivershub.com">DriversHub</a>
+      <div class="tagline">Build your Garage. Find your next ride.</div>
+    </div>
+  </div>
+</body>
+</html>
