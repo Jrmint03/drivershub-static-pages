@@ -14,3 +14,6 @@ primary_region = "ord"
   cpu_kind = "shared"
   cpus = 1
   memory_mb = 256
+
+[[http_service.domains]]
+  name = "s.drivershub.com"
