@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN CAR by @thud | DriversHub</title>
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="GREEN CAR by @thud" />
+  <meta property="og:description" content="Check out this photo on DriversHub" />
+  <meta property="og:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765149701229-eeqrfs.jpg" />
+  <meta property="og:url" content="https://s.drivershub.com/photos/51533979.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="DriversHub" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GREEN CAR by @thud" />
+  <meta name="twitter:description" content="Check out this photo on DriversHub" />
+  <meta name="twitter:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765149701229-eeqrfs.jpg" />
+  
+  <link rel="canonical" href="https://www.drivershub.com/u/thud/photo/51533979-5588-471b-9022-16954173b96a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --background: #0f0f0f;
+      --foreground: #fafafa;
+      --card: #1a1a1a;
+      --muted: #262626;
+      --muted-foreground: #a1a1aa;
+      --border: #27272a;
+      --primary: hsl(37, 90%, 55%);
+    }
+    
+    .light {
+      --background: #ffffff;
+      --foreground: #0f172a;
+      --card: #ffffff;
+      --muted: #f1f5f9;
+      --muted-foreground: #64748b;
+      --border: #e2e8f0;
+    }
+    
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--background);
+      color: var(--foreground);
+      min-height: 100vh;
+      line-height: 1.5;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    
+    .nav {
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: var(--background);
+      z-index: 50;
+    }
+    
+    .logo-link {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo-img {
+      height: 32px;
+      width: auto;
+    }
+    
+    /* Invert logo colors in dark mode */
+    body:not(.light) .logo-img {
+      filter: invert(1) hue-rotate(180deg);
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    
+    .btn-ghost {
+      background: transparent;
+      border: none;
+      color: var(--foreground);
+    }
+    
+    .btn-ghost:hover { background: var(--muted); }
+    
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--foreground);
+    }
+    
+    .btn-outline:hover { background: var(--muted); }
+    
+    .container {
+      max-width: 896px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+    
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .user-header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .avatar-fallback { color: var(--muted-foreground); font-size: 18px; }
+    
+    .user-info { flex: 1; }
+    
+    .username {
+      font-weight: 600;
+      color: var(--foreground);
+      text-decoration: none;
+    }
+    
+    .username:hover { text-decoration: underline; }
+    .date { font-size: 14px; color: var(--muted-foreground); }
+    
+    .photo-container {
+      background: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .photo-container img {
+      width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+    }
+    
+    .content-footer { padding: 16px; }
+    .photo-title { font-size: 20px; font-weight: 600; margin-bottom: 12px; }
+    
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: transparent;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: var(--muted-foreground);
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    .action-btn:hover { background: var(--muted); }
+    .action-btn svg { width: 20px; height: 20px; }
+    
+    .comments-section {
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+    
+    .comments-title { font-weight: 600; margin-bottom: 12px; }
+    .sign-in-prompt { font-size: 14px; color: var(--muted-foreground); }
+    .sign-in-prompt a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    .sign-in-prompt a:hover { text-decoration: underline; }
+    
+    .arrow-icon, .link-icon { width: 16px; height: 16px; }
+  </style>
+<script>
+    // Check URL param for dark mode preference
+    const urlParams = new URLSearchParams(window.location.search);
+    const isDarkMode = urlParams.get('d') === '1';
+    
+    // Apply light mode if NOT dark mode
+    if (!isDarkMode) {
+      document.body.classList.add('light');
+    }
+  </script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="https://www.drivershub.com" class="logo-link">
+      <img src="https://www.drivershub.com/assets/drivershub-logo-orange-black-DYpMbNQi.png" alt="DriversHub" class="logo-img" />
+    </a>
+    <a href="https://www.drivershub.com/u/thud/photo/51533979-5588-471b-9022-16954173b96a" class="btn btn-outline">View on DriversHub</a>
+  </nav>
+
+  <div class="container">
+    <div class="header-row">
+      <a href="https://www.drivershub.com/u/thud" class="btn btn-ghost">
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
+        </svg>
+        Back to Profile
+      </a>
+      <button class="btn btn-outline" onclick="navigator.clipboard.writeText('https://s.drivershub.com/photos/51533979.html');alert('Link copied!')">
+        <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+        </svg>
+        Copy Link
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="user-header">
+        <div class="avatar">
+          <img src="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/avatars/a93322d1-83c1-4ed6-862c-be6923048830-avatar-1765050974013.jpg" alt="thud" />
+        </div>
+        <div class="user-info">
+          <a href="https://www.drivershub.com/u/thud" class="username">@thud</a>
+          <p class="date">Dec 7, 2025</p>
+        </div>
+      </div>
+
+      <div class="photo-container">
+        <img src="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765149701229-eeqrfs.jpg" alt="GREEN CAR" />
+      </div>
+
+      <div class="content-footer">
+        <h1 class="photo-title">GREEN CAR</h1>
+        
+        <div class="actions">
+          <button class="action-btn" onclick="window.location.href='https://www.drivershub.com/u/thud/photo/51533979-5588-471b-9022-16954173b96a'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+            0
+          </button>
+          <span class="action-btn" style="cursor: default;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            0
+          </span>
+        </div>
+
+        <div class="comments-section">
+          <h2 class="comments-title">Comments</h2>
+          <p class="sign-in-prompt">
+            <a href="https://www.drivershub.com/u/thud/photo/51533979-5588-471b-9022-16954173b96a">Sign in</a> to leave a comment
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
