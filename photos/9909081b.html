@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GREEEEEEEEN by @thud | DriversHub</title>
+  <title>GREEEEEEEEN #lambo #car #green by @thud | DriversHub</title>
   
   <!-- Open Graph -->
-  <meta property="og:title" content="GREEEEEEEEN by @thud" />
+  <meta property="og:title" content="GREEEEEEEEN #lambo #car #green by @thud" />
   <meta property="og:description" content="Check out this photo on DriversHub" />
   <meta property="og:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765153493406-b4voqc.jpg" />
   <meta property="og:url" content="https://s.drivershub.com/photos/9909081b.html" />
@@ -15,7 +15,7 @@
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GREEEEEEEEN by @thud" />
+  <meta name="twitter:title" content="GREEEEEEEEN #lambo #car #green by @thud" />
   <meta name="twitter:description" content="Check out this photo on DriversHub" />
   <meta name="twitter:image" content="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765153493406-b4voqc.jpg" />
   
@@ -93,6 +93,11 @@
     
     @media (min-width: 768px) {
       .logo-img { height: 2.5rem; }
+    }
+    
+    /* Dark mode logo invert */
+    .dark .logo-img {
+      filter: invert(1) hue-rotate(180deg);
     }
     
     /* Nav right buttons */
@@ -470,6 +475,13 @@
       color: var(--muted-foreground);
     }
   </style>
+  <script>
+    // Check for dark mode parameter
+    if (new URLSearchParams(window.location.search).get('d') === '1') {
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </head>
 <body>
   <!-- Nav -->
@@ -511,11 +523,11 @@
       </div>
 
       <div class="photo-container">
-        <img src="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765153493406-b4voqc.jpg" alt="GREEEEEEEEN" />
+        <img src="https://kfexvjkqreeenzndkmvo.supabase.co/storage/v1/object/public/car-images/a93322d1-83c1-4ed6-862c-be6923048830/profile-photos/1765153493406-b4voqc.jpg" alt="GREEEEEEEEN #lambo #car #green" />
       </div>
 
       <div class="content-footer">
-        <h1 class="photo-title">GREEEEEEEEN</h1>
+        <h1 class="photo-title">GREEEEEEEEN #lambo #car #green</h1>
         
         <div class="actions">
           <a href="https://www.drivershub.com/u/thud/photo/9909081b-bd96-4395-aea5-8b6ae18ce490" class="action-btn">
@@ -524,12 +536,12 @@
             </svg>
             <span>1</span>
           </a>
-          <span class="comment-count">
+          <a href="https://www.drivershub.com/u/thud/photo/9909081b-bd96-4395-aea5-8b6ae18ce490" class="comment-count">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
             </svg>
             <span>6</span>
-          </span>
+          </a>
         </div>
 
         <!-- Comments Section -->
